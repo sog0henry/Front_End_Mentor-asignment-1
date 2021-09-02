@@ -15,7 +15,7 @@ a {
 /* Start Design */
 .design {
     padding: 20px;
-    width: 80%;
+    width: 90%;
     height: 80%;
     margin: auto;
 }
@@ -63,10 +63,13 @@ a {
 .attribution {
     margin-top: 50px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     body {
         height: 2000px;
         position: relative;
+    }
+    .design {
+        padding: 5px;
     }
     .container {
         flex-direction: column;
