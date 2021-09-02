@@ -14,7 +14,10 @@ a {
 /* End global rules */
 /* Start Design */
 .design {
-    padding: 70px;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
 }
 .container {
     display: flex;
@@ -32,7 +35,7 @@ a {
     .container .card {
     min-height: 600px;
     max-width: 400px;
-    margin: auto;
+    margin: auto;    
     }
     .container .card:first-child {
         border-radius: 10px 10px 0 0 !important;
@@ -50,6 +53,7 @@ a {
 .container .card {
     padding: 30px;
     color: white;
+    box-shadow: 0 0 30px black;
 }
 .container .card:first-child {
     background-color: hsl(31, 77%, 52%);
