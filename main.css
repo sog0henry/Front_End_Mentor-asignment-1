@@ -63,7 +63,7 @@ a {
 .attribution {
     margin-top: 50px;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     body {
         height: 2000px;
         position: relative;
