@@ -24,32 +24,6 @@ a {
     margin: auto;
     height: calc(100vh - 300px);
 }
-@media (max-width: 767px) {
-    body {
-        height: 2000px;
-        position: relative;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .container .card {
-    min-height: 600px;
-    max-width: 400px;
-    margin: auto;    
-    }
-    .container .card:first-child {
-        border-radius: 10px 10px 0 0 !important;
-    }
-    .container .card:last-child {
-        border-radius: 0 0 10px 10px !important;
-    }
-    .attribution {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
 .container .card {
     padding: 30px;
     color: white;
@@ -88,5 +62,31 @@ a {
 }
 .attribution {
     margin-top: 50px;
+}
+@media (max-width: 767px) {
+    body {
+        height: 2000px;
+        position: relative;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .card {
+    min-height: 600px;
+    max-width: 400px;
+    margin: auto;    
+    }
+    .container .card:first-child {
+        border-radius: 10px 10px 0 0 !important;
+    }
+    .container .card:last-child {
+        border-radius: 0 0 10px 10px !important;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 /* End Design */
