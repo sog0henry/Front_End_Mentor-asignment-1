@@ -1,0 +1,88 @@
+/* Start global rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/* End global rules */
+/* Start Design */
+.design {
+    padding: 70px;
+}
+.container {
+    display: flex;
+    margin: auto;
+    height: calc(100vh - 300px);
+}
+@media (max-width: 767px) {
+    body {
+        height: 2000px;
+        position: relative;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .card {
+    min-height: 600px;
+    max-width: 400px;
+    margin: auto;
+    }
+    .container .card:first-child {
+        border-radius: 10px 10px 0 0 !important;
+    }
+    .container .card:last-child {
+        border-radius: 0 0 10px 10px !important;
+    }
+    .attribution {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.container .card {
+    padding: 30px;
+    color: white;
+}
+.container .card:first-child {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.container .card:nth-child(2)  {
+    background-color: hsl(184, 100%, 22%);
+}
+.container .card:last-child {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.container .card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    margin: 30px 0;
+}
+.container .card p {
+    line-height: 1.6;
+    height: 50%;
+}
+.container .card .button {
+    padding: 15px 20px;
+    color: hsl(0, 0%, 95%);
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: .3s;
+}
+.container .card .button:hover {
+    background-color: white;
+    color: black;
+}
+.attribution {
+    margin-top: 50px;
+}
+/* End Design */
